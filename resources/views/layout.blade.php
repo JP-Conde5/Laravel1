@@ -11,9 +11,20 @@
 <body>
     <div class="container-fluid">
         <header class="masthead mb-auto">
-
+            <h1>O SAMURAI</h1>
         </header>
     </div>
-    <div
+    <div class="container-fluid">
+        <main role="main" class="py-4">
+            @hasSection('content')
+                @yield('content')
+            @endif
+        </main>
+    </div>
+    <div class="container-fluid">
+        <div class="card-footer">
+            <p>©Copright, direitos dados a Miyamoto Musashi</p>
+        </div>
+    </div>
 </body>
 </html>
